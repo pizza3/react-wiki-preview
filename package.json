@@ -37,6 +37,7 @@
     "@typescript-eslint/eslint-plugin": "2.19.2",
     "@typescript-eslint/parser": "2.19.2",
     "prop-types": "15.7.2",
+    "rc-trigger": "^4.0.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "styled-components": "5.0.0"
@@ -44,6 +45,8 @@
   "scripts": {
     "build": "webpack --config ./webpack.prod.js --mode production",
     "dev": "webpack-dev-server",
-    "watch": "webpack --config ./webpack.config.js --mode development"
+    "watch": "webpack --config ./webpack.config.js --mode development",
+    "start": "webpack --watch & webpack-dev-server --mode development --open"
+
   }
 }

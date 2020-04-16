@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Hello from './Hello';
 
 interface AppProps {
   name: string;
@@ -16,5 +17,5 @@ export const Container = styled.div<ContainerProps>`
 `;
 
 export default function App({ name }: AppProps) {
-  return <Container padding="1em">Hello {name}!</Container>;
+  return <Hello />;
 }
