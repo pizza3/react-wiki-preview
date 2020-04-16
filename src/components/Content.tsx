@@ -5,6 +5,8 @@ type Props = {
   theme: 'light' | 'dark';
 };
 
+type Theme = 'light' | 'dark';
+
 interface Data {
   extract: string;
   thumbnail: { source: string; width: number; height: number };
@@ -16,12 +18,13 @@ type States = {
   isLoaded: boolean;
   isSuccess: boolean;
 };
-const wikiLogo = (theme: 'light' | 'dark') => {
+
+const wikiLogo = (theme: Theme) => {
   const logoStyle = {
     position: 'relative' as 'relative',
     float: 'right' as 'right',
     right: '5px',
-    top: '1px',
+    top: '2px',
     width: '19px',
   };
   const color = theme === 'light' ? '#000' : '#a8a8a8';
@@ -43,13 +46,13 @@ const wikiLogo = (theme: 'light' | 'dark') => {
     </svg>
   );
 };
-const footer = (theme: 'light' | 'dark') => {
+const footer = (theme: Theme) => {
   const color =
     theme === 'light'
       ? 'linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%)'
       : 'linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)';
   return {
-    bottom: '0px',
+    bottom: '1px',
     width: '100%',
     height: '24px',
     backgroundImage: color,
@@ -57,20 +60,24 @@ const footer = (theme: 'light' | 'dark') => {
   };
 };
 
-const textStyles = {
-  padding: '14px 19px 0px',
+const textStyles = (w: number, h: number) => ({
+  width: `${w}px`,
+  height: `${h - 1}px`,
+  boxSizing: 'border-box' as 'border-box',
+  padding: '12px',
   fontSize: '11px',
   fontFamily: 'sans-serif',
   wordSpacing: '1px',
   fontWeight: 400,
   letterSpacing: '0px',
-};
+});
 
-const display = (data: Data, theme: 'light' | 'dark') => {
+const display = (data: Data, theme: Theme) => {
   let width = 250;
-  const height = 300;
   let flexDir = 'column';
   let imgWidth = 250;
+  let imgHeight = 150;
+  const height = 300;
   const background = theme === 'light' ? '#fff' : '#000';
   const color = theme === 'light' ? 'rgb(99, 98, 98)' : '#A8A8A8';
 
@@ -78,6 +85,7 @@ const display = (data: Data, theme: 'light' | 'dark') => {
     width = 400;
     flexDir = 'row';
     imgWidth = 200;
+    imgHeight = 300;
   }
   return (
     <div
@@ -93,12 +101,17 @@ const display = (data: Data, theme: 'light' | 'dark') => {
         borderRadius: '2px',
       }}
     >
-      <img
-        alt={data.extract}
-        style={{ width: `${imgWidth}px` }}
-        src={data.thumbnail.source}
+      <div
+        style={{
+          width: `${imgWidth}px`,
+          height: `${imgHeight}px`,
+          backgroundImage: `url("${data.thumbnail.source}")`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
       />
-      <div style={textStyles}>{data.extract}</div>
+      <div style={textStyles(imgWidth, imgHeight)}>{data.extract}</div>
       <div style={footer(theme)}>{wikiLogo(theme)}</div>
     </div>
   );
