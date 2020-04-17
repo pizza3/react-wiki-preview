@@ -1,58 +1,57 @@
 {
   "name": "react-wiki-preview",
-  "main": "build/app.min.js",
-  "version": "0.0.1",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pizza3/react-wiki-preview.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pizza3/react-wiki-preview/issues"
-  },
-  "homepage": "https://github.com/pizza3/react-wiki-preview#readme",
-  "devDependencies": {
-    "@babel/core": "7.5.0",
-    "@babel/plugin-transform-regenerator": "7.4.5",
-    "@babel/plugin-transform-runtime": "7.5.0",
-    "@babel/preset-env": "7.5.0",
-    "@babel/preset-react": "7.0.0",
-    "@babel/runtime": "7.5.0",
-    "babel-eslint": "9.0.0",
-    "babel-loader": "8.0.4",
-    "eslint": "5.16.0",
-    "eslint-config-airbnb": "17.1.1",
-    "eslint-config-prettier": "4.3.0",
-    "eslint-config-wesbos": "0.0.19",
-    "eslint-plugin-html": "5.0.5",
-    "eslint-plugin-import": "2.20.0",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-prettier": "3.1.2",
-    "eslint-plugin-react": "7.18.0",
-    "eslint-plugin-react-hooks": "1.7.0",
-    "prettier": "1.19.1",
-    "regenerator-runtime": "0.13.2",
-    "terser-webpack-plugin": "1.2.3",
-    "ts-loader": "6.2.1",
-    "typescript": "3.7.5",
-    "webpack": "4.41.6",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.10.3"
-  },
-  "dependencies": {
-    "@types/react": "16.9.19",
-    "@types/react-dom": "16.9.5",
-    "@types/styled-components": "4.4.2",
-    "@types/webpack-env": "1.15.1",
-    "@typescript-eslint/eslint-plugin": "2.19.2",
-    "@typescript-eslint/parser": "2.19.2",
-    "prop-types": "15.7.2",
-    "rc-trigger": "^4.0.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+  "version": "1.0.0",
+  "description": "Wikipedia article preview feature for react.",
+  "author": "pizza3",
+  "license": "MIT",
+  "repository": "pizza3/react-wiki-preview",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
   },
   "scripts": {
-    "build": "webpack --config ./webpack.prod.js --mode production",
-    "dev": "webpack-dev-server",
-    "watch": "webpack --config ./webpack.config.js --mode development"
-  }
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "prepublish": "run-s build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && npm install && npm run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.27",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "microbundle-crl": "^0.13.8",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ]
 }
