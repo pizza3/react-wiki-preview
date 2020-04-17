@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Wrapper from './Wrapper';
+import Wrapper from '../index';
 
 const Keyword = [
   { word: 'Greek', title: 'Ancient Greek' },

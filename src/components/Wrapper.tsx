@@ -6,7 +6,7 @@ type Props = {
   keyword: (string | { word: string; title: string })[];
   theme: 'light' | 'dark';
   anchorStyles: CSSProperties;
-  mouseEnterDelay: number
+  mouseEnterDelay: number;
 };
 
 type States = {
@@ -17,7 +17,7 @@ export default class Wrapper extends React.Component<Props, States> {
   static defaultProps = {
     theme: 'light',
     anchorStyles: {},
-    mouseEnterDelay: 0
+    mouseEnterDelay: 0,
   };
 
   state = {
@@ -39,7 +39,11 @@ export default class Wrapper extends React.Component<Props, States> {
           return (
             <Fragment key={index}>
               {` `}
-              <Tooltip theme={theme} value={value} mouseEnterDelay={mouseEnterDelay}>
+              <Tooltip
+                theme={theme}
+                value={value}
+                mouseEnterDelay={mouseEnterDelay}
+              >
                 <a
                   style={anchorStyles}
                   href={`https://en.wikipedia.org/wiki/${value}`}

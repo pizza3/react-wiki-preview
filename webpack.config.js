@@ -1,5 +1,4 @@
 const path = require('path');
-const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -25,7 +24,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: `${__dirname}/docs`,
+    path: `${__dirname}/example`,
     publicPath: '/',
     filename: 'app.js',
   },
@@ -35,7 +34,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'docs'),
+    contentBase: path.resolve(__dirname, 'example'),
     liveReload: true,
     port: 9000,
     historyApiFallback: true,

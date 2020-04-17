@@ -21,7 +21,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: `${__dirname}/public`,
+    path: `${__dirname}/build`,
     publicPath: '/',
     filename: 'app.min.js',
   },
