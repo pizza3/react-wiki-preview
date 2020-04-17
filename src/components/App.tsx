@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Hello from './Hello';
 
-
 type ContainerProps = {
   padding?: string | 0;
   margin?: string | 0;

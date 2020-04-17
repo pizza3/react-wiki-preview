@@ -10,10 +10,11 @@ const Keyword = [
   'astronomer',
   'clock',
   'exoplanet',
+  'pendulum'
 ];
 
 const Hello = () => (
-  <Wrapper theme="light" keyword={Keyword}>
+  <Wrapper theme="dark" keyword={Keyword}>
     Horologium (Latin hōrologium, from Greek ὡρολόγιον, lit. 'an instrument for
     telling the hour') is a constellation of six stars faintly visible in the
     southern celestial hemisphere. It was first described by the French
