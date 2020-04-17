@@ -39,13 +39,19 @@ const App = () => {
 
 ## API
 
+### Component
+
+### `<Wrapper/>`
+
+
 ### Props
 
 ### `keyword`  
 
 Type: `[ string , { word: string, title: string}]`
 
-Provide a array of string's for which a preview would be needed, for some of them you can also mention it like this `{ word: "your word"; title: "wiki article title" }`. For some word's the article title won't be available so for those cases you can also use the above object.
+Provide a array of string's for which a preview would be needed, If a word doesn't exist as a wiki article or the title of the article itself is different for
+those cases you can mention it like this `{ word: "your word"; title: "wiki article title" }` instead of provind a `string`.
 
 Example
 ```js
@@ -60,12 +66,6 @@ There are two options `light` and `dark`. Default is `light`.
 Type: `CSSProperties`
 You can also give custom style properties to the anchor tag's too.
 
-### `mouseEnterDelay`
-type: `float`
-delay time to show when mouse enter. unit: s.
-
-
-
 Example
 ```js
 {
@@ -74,6 +74,11 @@ Example
     background: "yellow"
 }
 ```
+
+### `mouseEnterDelay`
+type: `float`
+delay time to show when mouse enter. unit: s.
+
 
 ## Development
 
