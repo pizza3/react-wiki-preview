@@ -3,7 +3,7 @@ import Tooltip from './Tooltip';
 
 type Props = {
   children: string;
-  keyword: (string | { name: string; title: string })[];
+  keyword: (string | { word: string; title: string })[];
   theme: 'light' | 'dark';
   anchorStyles: CSSProperties;
 };
@@ -61,7 +61,7 @@ export default class Wrapper extends React.Component<Props, States> {
     let objValue: any = {};
     keyword.forEach(element => {
       if (typeof element === 'object') {
-        if (element.name === val) {
+        if (element.word === val) {
           objValue = element;
         }
       } else if (element === val) {

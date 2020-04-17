@@ -3,6 +3,11 @@
 ## Introduction
 Add wikipedia link preview to your own article's, blog post's, or in any general text content. Short link previews really do help users to gain context on the article they are reading or to define an unfamiliar term, object, event, or idea without navigating away from their original topic.
 
+<p align="center">
+  <img src="./demo.gif" height="398" width="650">
+</p>
+
+
 ## Installation
 
 ```zsh
@@ -16,8 +21,9 @@ import React from "react";
 import Wrapper from "react-wiki-preview";
 
 const App = () => {
-  const keyword = [{ name: 'Greek', title: 'Ancient Greek' }, { name: 'celestial', title: 'Astronomical object' },
-,'constellation','pendulum']
+  const keyword = [{ word: 'Greek', title: 'Ancient Greek' }, 
+  { word: 'celestial', title: 'Astronomical object' },
+  'constellation','pendulum']
   return(
     <Wrapper keyword={keyword}>
         Horologium (Latin hōrologium, from Greek ὡρολόγιον, lit. 'an instrument for
@@ -37,19 +43,19 @@ const App = () => {
 
 ### `keyword`  
 
-Type: `[ string , { name: string, title: string}]`
+Type: `[ string , { word: string, title: string}]`
 
-Provide a array of string's for which a preview would be needed, for some of them you can also mention it like this `{ name: "your word"; title: "wiki article title" }`. For some word's the article title won't be available so for those cases you can also use the above object.
+Provide a array of string's for which a preview would be needed, for some of them you can also mention it like this `{ word: "your word"; title: "wiki article title" }`. For some word's the article title won't be available so for those cases you can also use the above object.
 
 Example
 ```js
-[{ name: 'Greek', title: 'Ancient Greek' },'star','constellation','Sun']
+[{ word: 'Greek', title: 'Ancient Greek' },'star','constellation','Sun']
 ```
 
 ### `theme` 
 Type: `string`
 
-There are two options `light` and `dark`.
+There are two options `light` and `dark`. Default is `light`.
 
 ### `anchorStyle` 
 Type: `CSSProperties`

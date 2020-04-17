@@ -2,20 +2,26 @@ import * as React from 'react';
 import Wrapper from './Wrapper';
 
 const Keyword = [
-  { name: 'Greek', title: 'Ancient Greek' },
+  { word: 'Greek', title: 'Ancient Greek' },
   'star',
   'constellation',
   'Sun',
-  { name: 'celestial', title: 'Astronomical object' },
+  { word: 'celestial', title: 'Astronomical object' },
   'astronomer',
   'clock',
   'exoplanet',
   'pendulum',
-  { name: 'IAU', title: 'IAU designated constellations' },
+  { word: 'IAU', title: 'IAU designated constellations' },
 ];
 
+const style = {
+  color: '#000',
+  textDecoration: 'none',
+  fontWeight: 800,
+};
+
 const Hello = () => (
-  <Wrapper keyword={Keyword}>
+  <Wrapper keyword={Keyword} anchorStyles={style} theme="dark">
     Horologium (Latin hōrologium, from Greek ὡρολόγιον, lit. 'an instrument for
     telling the hour') is a constellation of six stars faintly visible in the
     southern celestial hemisphere. It was first described by the French
