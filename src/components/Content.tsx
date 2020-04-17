@@ -17,6 +17,7 @@ type States = {
   data: Data;
   isLoaded: boolean;
   isSuccess: boolean;
+  isImageLoaded: boolean;
 };
 
 const wikiLogo = (theme: Theme) => {
@@ -126,6 +127,7 @@ export default class Content extends React.Component<Props, States> {
     },
     isLoaded: false,
     isSuccess: false,
+    isImageLoaded: false
   };
 
   componentDidMount() {

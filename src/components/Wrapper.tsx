@@ -32,13 +32,14 @@ export default class Wrapper extends React.Component<Props, States> {
         const data = this.checkKeywordExist(val);
         if (Object.keys(data).length > 0) {
           const value = data.title;
-          return (
+          return (<>{` `}
             <Tooltip key={index} theme={theme} value={value}>
               <a href="https:pizza3.github.io">{val}</a>
             </Tooltip>
+            </>
           );
         }
-        return `${val} `;
+        return ` ${val}`;
       }
     );
     this.setState({

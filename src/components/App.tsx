@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Hello from './Hello';
 
-interface AppProps {
-  name: string;
-}
 
 type ContainerProps = {
   padding?: string | 0;
@@ -16,6 +13,6 @@ export const Container = styled.div<ContainerProps>`
   margin: ${props => ('margin' in props ? props.margin : 0)};
 `;
 
-export default function App({ name }: AppProps) {
+export default function App() {
   return <Hello />;
 }
