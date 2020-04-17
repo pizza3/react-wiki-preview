@@ -42,7 +42,7 @@ const App = () => {
 ### Component
 
 ### `<Wrapper/>`
-
+The `Wrapper` component 
 
 ### Props
 
@@ -82,17 +82,14 @@ delay time to show when mouse enter. unit: s.
 
 ## Development
 
-### Run development server
-```bash
-npm run start
-```
-
 ### Run build
+For building the final lib.
 ```bash
 npm run build
 ```
 
 ### Run dev
+For running the example and testing lib.
 ```bash
 npm run dev
 ```

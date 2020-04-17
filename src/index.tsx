@@ -1,9 +1,6 @@
-import ReactDOM from 'react-dom';
-import React from 'react';
+import Wrapper from './components/Wrapper';
 
-import App from './components/App';
-
-ReactDOM.render(<App />, document.querySelector('#container'));
+export default Wrapper;
 
 if (module && module.hot) {
   module.hot.accept();

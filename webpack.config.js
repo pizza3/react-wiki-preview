@@ -1,10 +1,11 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
   watch: true,
-  entry: ['./src/index.tsx'],
+  entry: ['./src/example.tsx'],
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -24,7 +25,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: `${__dirname}/public`,
+    path: `${__dirname}/docs`,
     publicPath: '/',
     filename: 'app.js',
   },
@@ -34,7 +35,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'docs'),
     liveReload: true,
     port: 9000,
     historyApiFallback: true,

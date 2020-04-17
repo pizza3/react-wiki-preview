@@ -65,7 +65,7 @@ const textStyles = (w: number, h: number, theme: Theme) => ({
   width: `${w}px`,
   height: `${h}px`,
   boxSizing: 'border-box' as 'border-box',
-  padding: '12px',
+  padding: '16px 22px',
   fontSize: '11px',
   fontFamily: 'sans-serif',
   wordSpacing: '1px',
