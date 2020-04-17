@@ -11,7 +11,9 @@ Add wikipedia link preview to your own article's, blog post's, or in any general
 
 ### Props
 
-Name: `keyword` Type: `[ string , { name: string, title: string}]`
+### `keyword`  
+
+Type: `[ string , { name: string, title: string}]`
 
 Provide a array of string's for which a preview would be needed, for some of them you can also mention it like this `{ name: "your word"; title: "wiki article title" }`. For some word's the article title won't be available so for those cases you can also use the above object.
 
@@ -19,7 +21,8 @@ Example
 
 `[{ name: 'Greek', title: 'Ancient Greek' },'star','constellation','Sun',]`
 
-Name: `theme` Type: `string`
+### `theme` 
+Type: `string`
 
 There are two options `light` and `dark`.
 
