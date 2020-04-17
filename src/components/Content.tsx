@@ -61,7 +61,7 @@ const footer = (theme: Theme) => {
   };
 };
 
-const textStyles = (w: number, h: number) => ({
+const textStyles = (w: number, h: number, theme: Theme) => ({
   width: `${w}px`,
   height: `${h}px`,
   boxSizing: 'border-box' as 'border-box',
@@ -71,6 +71,7 @@ const textStyles = (w: number, h: number) => ({
   wordSpacing: '1px',
   fontWeight: 400,
   letterSpacing: '0px',
+  background: theme === 'light' ? '#fff' : '#000',
 });
 
 const display = (data: Data, theme: Theme) => {
@@ -78,11 +79,9 @@ const display = (data: Data, theme: Theme) => {
   let flexDir = 'column';
   let imgWidth = 250;
   let imgHeight = 150;
-  const height = 300;
-  const background = theme === 'light' ? '#fff' : '#000';
   const color = theme === 'light' ? 'rgb(99, 98, 98)' : '#A8A8A8';
-
-  if (data.thumbnail.width < data.thumbnail.height) {
+  const imageExist = 'thumbnail' in data;
+  if (imageExist && data.thumbnail.width < data.thumbnail.height) {
     width = 400;
     flexDir = 'row';
     imgWidth = 200;
@@ -92,8 +91,7 @@ const display = (data: Data, theme: Theme) => {
     <div
       style={{
         width: `${width}px`,
-        height: `${height}px`,
-        background,
+        height: `auto`,
         overflow: 'hidden',
         boxShadow: 'rgba(0, 0, 0, 0.55) 0px 0px 16px -3px',
         display: 'flex',
@@ -102,17 +100,22 @@ const display = (data: Data, theme: Theme) => {
         borderRadius: '2px',
       }}
     >
-      <div
-        style={{
-          width: `${imgWidth}px`,
-          height: `${imgHeight}px`,
-          backgroundImage: `url("${data.thumbnail.source}")`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
-      <div style={textStyles(imgWidth, imgHeight)}>{data.extract}</div>
+      {imageExist ? (
+        <div
+          style={{
+            width: `${imgWidth}px`,
+            height: `${imgHeight}px`,
+            backgroundImage: `url("${data.thumbnail.source}")`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundColor: '#fff',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
+      ) : (
+        []
+      )}
+      <div style={textStyles(imgWidth, imgHeight, theme)}>{data.extract}</div>
       <div style={footer(theme)}>{wikiLogo(theme)}</div>
     </div>
   );
@@ -127,7 +130,7 @@ export default class Content extends React.Component<Props, States> {
     },
     isLoaded: false,
     isSuccess: false,
-    isImageLoaded: false
+    isImageLoaded: false,
   };
 
   componentDidMount() {
@@ -144,7 +147,7 @@ export default class Content extends React.Component<Props, States> {
       }
       this.updateData(response);
     });
-  };
+  }
 
   updateData = (response: Response) => {
     const This = this;

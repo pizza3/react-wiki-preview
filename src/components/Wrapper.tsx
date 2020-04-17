@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Tooltip from './Tooltip';
 
 type Props = {
@@ -32,11 +32,13 @@ export default class Wrapper extends React.Component<Props, States> {
         const data = this.checkKeywordExist(val);
         if (Object.keys(data).length > 0) {
           const value = data.title;
-          return (<>{` `}
-            <Tooltip key={index} theme={theme} value={value}>
-              <a href="https:pizza3.github.io">{val}</a>
-            </Tooltip>
-            </>
+          return (
+            <Fragment key={index}>
+              {` `}
+              <Tooltip theme={theme} value={value}>
+                <a href="https:pizza3.github.io">{val}</a>
+              </Tooltip>
+            </Fragment>
           );
         }
         return ` ${val}`;
