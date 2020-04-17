@@ -1,6 +1,15 @@
 {
   "name": "react-wiki-preview",
   "main": "build/app.min.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pizza3/react-wiki-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pizza3/react-wiki-preview/issues"
+  },
+  "homepage": "https://github.com/pizza3/react-wiki-preview#readme",
   "devDependencies": {
     "@babel/core": "7.5.0",
     "@babel/plugin-transform-regenerator": "7.4.5",
