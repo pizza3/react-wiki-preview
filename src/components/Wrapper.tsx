@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, CSSProperties } from 'react';
 import Tooltip from './Tooltip';
 
 type Props = {
   children: string;
   keyword: (string | { name: string; title: string })[];
   theme: 'light' | 'dark';
+  anchorStyles: CSSProperties;
 };
 
 type States = {
@@ -14,6 +15,7 @@ type States = {
 export default class Wrapper extends React.Component<Props, States> {
   static defaultProps = {
     theme: 'light',
+    anchorStyles: {},
   };
 
   state = {
@@ -25,7 +27,7 @@ export default class Wrapper extends React.Component<Props, States> {
   }
 
   addAnchors = (sentence: string) => {
-    const { theme } = this.props;
+    const { theme, anchorStyles } = this.props;
     const splitArray: string[] | [] = sentence.split(' ');
     const replacement: (string | JSX.Element)[] = splitArray.map(
       (val, index) => {
@@ -36,7 +38,12 @@ export default class Wrapper extends React.Component<Props, States> {
             <Fragment key={index}>
               {` `}
               <Tooltip theme={theme} value={value}>
-                <a href="https:pizza3.github.io">{val}</a>
+                <a
+                  style={anchorStyles}
+                  href={`https://en.wikipedia.org/wiki/${value}`}
+                >
+                  {val}
+                </a>
               </Tooltip>
             </Fragment>
           );

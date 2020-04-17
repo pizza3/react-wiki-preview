@@ -33,7 +33,7 @@ export default class Tooltip extends React.Component<Props> {
         mouseEnterDelay={0}
         prefixCls="dropdown"
         popupAlign={position.bottom}
-        defaultPopupVisible
+        // defaultPopupVisible
       >
         {children}
       </Trigger>
