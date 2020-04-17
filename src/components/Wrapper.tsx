@@ -6,6 +6,7 @@ type Props = {
   keyword: (string | { word: string; title: string })[];
   theme: 'light' | 'dark';
   anchorStyles: CSSProperties;
+  mouseEnterDelay: number
 };
 
 type States = {
@@ -16,6 +17,7 @@ export default class Wrapper extends React.Component<Props, States> {
   static defaultProps = {
     theme: 'light',
     anchorStyles: {},
+    mouseEnterDelay: 0
   };
 
   state = {
@@ -27,7 +29,7 @@ export default class Wrapper extends React.Component<Props, States> {
   }
 
   addAnchors = (sentence: string) => {
-    const { theme, anchorStyles } = this.props;
+    const { theme, anchorStyles, mouseEnterDelay } = this.props;
     const splitArray: string[] | [] = sentence.split(' ');
     const replacement: (string | JSX.Element)[] = splitArray.map(
       (val, index) => {
@@ -37,7 +39,7 @@ export default class Wrapper extends React.Component<Props, States> {
           return (
             <Fragment key={index}>
               {` `}
-              <Tooltip theme={theme} value={value}>
+              <Tooltip theme={theme} value={value} mouseEnterDelay={mouseEnterDelay}>
                 <a
                   style={anchorStyles}
                   href={`https://en.wikipedia.org/wiki/${value}`}

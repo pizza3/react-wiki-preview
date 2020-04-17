@@ -54,13 +54,17 @@ Example
 
 ### `theme` 
 Type: `string`
-
 There are two options `light` and `dark`. Default is `light`.
 
 ### `anchorStyle` 
 Type: `CSSProperties`
-
 You can also give custom style properties to the anchor tag's too.
+
+### `mouseEnterDelay`
+type: `float`
+delay time to show when mouse enter. unit: s.
+
+
 
 Example
 ```js

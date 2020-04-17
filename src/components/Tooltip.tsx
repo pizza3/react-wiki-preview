@@ -21,16 +21,17 @@ type Props = {
   value: string | { name: string; title: string };
   theme: 'light' | 'dark';
   children: any;
+  mouseEnterDelay: number;
 };
 
 export default class Tooltip extends React.Component<Props> {
   render() {
-    const { children, value, theme } = this.props;
+    const { children, value, theme, mouseEnterDelay } = this.props;
     return (
       <Trigger
         action={['hover']}
         popup={<Content theme={theme} value={value} />}
-        mouseEnterDelay={0}
+        mouseEnterDelay={mouseEnterDelay}
         prefixCls="dropdown"
         popupAlign={position.bottom}
         // defaultPopupVisible
