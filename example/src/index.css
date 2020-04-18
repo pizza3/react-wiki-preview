@@ -14,6 +14,8 @@ body{
   position: absolute;
   opacity: 1;
   transition: 0.1s;
+  /* width: auto;
+  height: auto; */
 }
 .trigger-hidden {
   opacity: 0;

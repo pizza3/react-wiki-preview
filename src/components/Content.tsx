@@ -20,6 +20,39 @@ type States = {
   isImageLoaded: boolean
 }
 
+const arrow = (theme: Theme) => {
+  const color = theme === 'light' ? '#fff' : '#000'
+  const styles = {
+    position: 'absolute' as 'absolute',
+    zIndex: 0,
+    top: '-18px',
+    width: '39px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    left: '0px',
+    right: '0px'
+  }
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='65'
+      height='37'
+      viewBox='0 0 65 37'
+      style={styles}
+    >
+      <g transform='matrix(1, 0, 0, 1, 0, 0)'>
+        <path
+          id='Polygon_1-2'
+          data-name='Polygon 1'
+          d='M20.436,3.651a4,4,0,0,1,6.128,0L41.485,21.429A4,4,0,0,1,38.421,28H8.579a4,4,0,0,1-3.064-6.571Z'
+          fill={color}
+          transform='translate(0 0)'
+        />
+      </g>
+    </svg>
+  )
+}
+
 const wikiLogo = (theme: Theme) => {
   const logoStyle = {
     position: 'relative' as 'relative',
@@ -55,6 +88,7 @@ const footer = (theme: Theme) => {
   return {
     bottom: '0px',
     width: '100%',
+    zIndex: 1,
     height: '24px',
     backgroundImage: color,
     position: 'absolute' as 'absolute'
@@ -67,9 +101,11 @@ const textStyles = (w: number, h: number, theme: Theme) => ({
   boxSizing: 'border-box' as 'border-box',
   padding: '16px 22px',
   fontSize: '11px',
+  overflow: 'hidden',
   fontFamily: 'sans-serif',
   wordSpacing: '1px',
   fontWeight: 400,
+  zIndex: 1,
   letterSpacing: '0px',
   background: theme === 'light' ? '#fff' : '#000'
 })
@@ -92,7 +128,6 @@ const display = (data: Data, theme: Theme) => {
       style={{
         width: `${width}px`,
         height: `auto`,
-        overflow: 'hidden',
         boxShadow: 'rgba(0, 0, 0, 0.55) 0px 0px 16px -3px',
         display: 'flex',
         flexDirection: flexDir === 'column' ? 'column' : 'row',
@@ -109,6 +144,7 @@ const display = (data: Data, theme: Theme) => {
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundColor: '#fff',
+            zIndex: 1,
             backgroundRepeat: 'no-repeat'
           }}
         />
@@ -117,6 +153,7 @@ const display = (data: Data, theme: Theme) => {
       )}
       <div style={textStyles(imgWidth, imgHeight, theme)}>{data.extract}</div>
       <div style={footer(theme)}>{wikiLogo(theme)}</div>
+      {arrow(theme)}
     </div>
   )
 }
