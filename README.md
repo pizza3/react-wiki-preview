@@ -4,7 +4,7 @@
 Add wikipedia link preview to your own article's, blog post's, or in any general text content. Short link previews really do help users to gain context on the article they are reading or to define an unfamiliar term, object, event, or idea without navigating away from their original topic.
 
 <p align="center">
-  <img src="./demo.gif" height="398" width="650">
+  <img src="https://github.com/pizza3/asset/blob/master/demopreview.gif?raw=true" height="398" width="650">
 </p>
 
 
@@ -34,7 +34,21 @@ const App = () => {
     </Wrapper>
   )
 }
+```
 
+Note: We also need to include these css classes as well.
+
+```css
+.dropdown {
+  position: absolute;
+  opacity: 1;
+  transition: 0.1s;
+  
+}
+.dropdown-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 ```
 
 ## API

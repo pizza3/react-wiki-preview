@@ -10,7 +10,7 @@ type Props = {
 }
 
 type States = {
-  str: any
+  str: (string | JSX.Element)[]
 }
 
 export default class Wrapper extends React.Component<Props, States> {
@@ -20,58 +20,62 @@ export default class Wrapper extends React.Component<Props, States> {
     mouseEnterDelay: 0
   }
 
-  state = {
-    str: ''
+  state: States = {
+    str: []
   }
 
   componentDidMount() {
-    this.addAnchors(this.props.children)
+    if (typeof this.props.children === 'string') {
+      this.addAnchors(this.props.children)
+    } else {
+      console.error('The children are needed to be of type "String".')
+    }
   }
 
-  addAnchors = (sentence: string) => {
+  addAnchors = (textContent: string) => {
     const { theme, anchorStyles, mouseEnterDelay } = this.props
-    const splitArray: string[] | [] = sentence.split(' ')
-    const replacement: (string | JSX.Element)[] = splitArray.map(
-      (val, index) => {
-        const data = this.checkKeywordExist(val)
-        if (Object.keys(data).length > 0) {
-          const value = data.title
-          return (
-            <Fragment key={index}>
-              {` `}
-              <Tooltip
-                theme={theme}
-                value={value}
-                mouseEnterDelay={mouseEnterDelay}
+    const wordArray: string[] | [] = textContent.split(' ')
+    const replacement: (string | JSX.Element)[] = wordArray.map((word, index):
+      | string
+      | JSX.Element => {
+      const data: {} | { title: string } = this.checkKeywordExist(word)
+      if ('title' in data) {
+        const value = data.title
+        return (
+          <Fragment key={index}>
+            {` `}
+            <Tooltip
+              theme={theme}
+              value={value}
+              mouseEnterDelay={mouseEnterDelay}
+            >
+              <a
+                style={anchorStyles}
+                href={`https://en.wikipedia.org/wiki/${value}`}
               >
-                <a
-                  style={anchorStyles}
-                  href={`https://en.wikipedia.org/wiki/${value}`}
-                >
-                  {val}
-                </a>
-              </Tooltip>
-            </Fragment>
-          )
-        }
-        return ` ${val}`
+                {word}
+              </a>
+            </Tooltip>
+          </Fragment>
+        )
       }
-    )
+      return ` ${word}`
+    })
     this.setState({
       str: replacement
     })
   }
 
-  checkKeywordExist = (val: string): any => {
+  checkKeywordExist = (word: string): {} | { title: string } => {
     const { keyword } = this.props
-    let objValue: any = {}
+    let objValue: {} | { title: string } = {}
     keyword.forEach((element) => {
       if (typeof element === 'object') {
-        if (element.word === val) {
+        if (element.word === word) {
           objValue = element
         }
-      } else if (element === val) {
-        objValue = { title: val }
+      } else if (element === word) {
+        objValue = { title: word }
       }
     })
     return objValue

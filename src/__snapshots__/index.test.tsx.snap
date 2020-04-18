@@ -1,0 +1,742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper Component Creates basic snapshot 1`] = `
+<Wrapper
+  anchorStyles={Object {}}
+  keyword={
+    Array [
+      Object {
+        "title": "Ancient Greek",
+        "word": "Greek",
+      },
+      "star",
+      "constellation",
+      "Sun",
+      Object {
+        "title": "Astronomical object",
+        "word": "celestial",
+      },
+      "astronomer",
+      "clock",
+      "exoplanet",
+      "pendulum",
+      Object {
+        "title": "IAU designated constellations",
+        "word": "IAU",
+      },
+    ]
+  }
+  mouseEnterDelay={0}
+  theme="light"
+>
+  <div>
+     Horologium
+     (Latin
+     hōrologium,
+     from
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="Ancient Greek"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="Ancient Greek"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/Ancient Greek"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          Greek
+        </a>
+      </Trigger>
+    </Tooltip>
+     ὡρολόγιον,
+     lit. 'an
+     instrument
+for
+     telling
+     the
+     hour')
+     is
+     a
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="constellation"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="constellation"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/constellation"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          constellation
+        </a>
+      </Trigger>
+    </Tooltip>
+     of
+     six
+     stars
+     faintly
+     visible
+     in
+the
+     southern
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="Astronomical object"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="Astronomical object"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/Astronomical object"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          celestial
+        </a>
+      </Trigger>
+    </Tooltip>
+     hemisphere.
+     It
+     was
+     first
+     described
+     by
+     the
+     French
+astronomer
+     Nicolas-Louis
+     de
+     Lacaille
+     in
+     1756
+     and
+     visualized
+     by
+     him
+     as
+     a
+clock
+     with
+     a
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="pendulum"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="pendulum"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/pendulum"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          pendulum
+        </a>
+      </Trigger>
+    </Tooltip>
+     and
+     a
+     second
+     hand.
+     In
+     1922
+     the
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="constellation"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="constellation"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/constellation"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          constellation
+        </a>
+      </Trigger>
+    </Tooltip>
+     was
+redefined
+     by
+     the
+     International
+     Astronomical
+     Union
+     (IAU)
+     as
+     a
+     region
+     of
+     the
+celestial
+     sphere
+     containing
+     Lacaille's
+     stars,
+     and
+     has
+     since
+     been
+     an
+     IAU
+designated
+     constellation.
+     Horologium's
+     associated
+     region
+     is
+     wholly
+     visible
+to
+     observers
+     south
+     of
+     23°N.
+     The
+     constellation's
+     brightest
+     star—and
+     the
+only
+     one
+     brighter
+     than
+     an
+     apparent
+     magnitude
+     of
+     4—is
+     Alpha
+     Horologii
+     (at
+3.85),
+     an
+     ageing
+     orange
+     giant
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="star"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="star"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/star"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          star
+        </a>
+      </Trigger>
+    </Tooltip>
+     that
+     has
+     swollen
+     to
+     around
+     11
+     times
+     the
+diameter
+     of
+     the
+     Sun.
+     The
+     long-period
+     variable-brightness
+     star,
+     R
+     Horologii
+(4.7
+     to
+     14.3),
+     has
+     one
+     of
+     the
+     largest
+     variations
+     in
+     brightness
+     among
+     all
+stars
+     in
+     the
+     night
+     sky
+     visible
+     to
+     the
+     unaided
+     eye.
+     Four
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="star"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="star"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/star"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          star
+        </a>
+      </Trigger>
+    </Tooltip>
+     systems
+     in
+the
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="constellation"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="constellation"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/constellation"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          constellation
+        </a>
+      </Trigger>
+    </Tooltip>
+     are
+     known
+     to
+     have
+     exoplanets;
+     one—Gliese
+     1061—contains
+an
+     
+    <Tooltip
+      mouseEnterDelay={0}
+      theme="light"
+      value="exoplanet"
+    >
+      <Trigger
+        action={
+          Array [
+            "hover",
+          ]
+        }
+        afterPopupVisibleChange={[Function]}
+        blurDelay={0.15}
+        defaultPopupVisible={false}
+        destroyPopupOnHide={false}
+        focusDelay={0}
+        getDocument={[Function]}
+        getPopupClassNameFromAlign={[Function]}
+        hideAction={Array []}
+        mask={false}
+        maskClosable={true}
+        mouseEnterDelay={0}
+        mouseLeaveDelay={0.1}
+        onPopupAlign={[Function]}
+        onPopupVisibleChange={[Function]}
+        popup={
+          <Content
+            theme="light"
+            value="exoplanet"
+          />
+        }
+        popupAlign={
+          Object {
+            "offset": Array [
+              0,
+              10,
+            ],
+            "points": Array [
+              "tc",
+              "bc",
+            ],
+          }
+        }
+        popupClassName=""
+        popupStyle={Object {}}
+        prefixCls="dropdown"
+        showAction={Array []}
+      >
+        <a
+          href="https://en.wikipedia.org/wiki/exoplanet"
+          key="trigger"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={Object {}}
+        >
+          exoplanet
+        </a>
+      </Trigger>
+    </Tooltip>
+     in
+     its
+     habitable
+     zone.
+  </div>
+</Wrapper>
+`;

@@ -164,8 +164,8 @@ export default class Content extends React.Component<Props, States> {
   render() {
     const { theme } = this.props
     const { data, isLoaded, isSuccess } = this.state
-    const final: Element | any =
+    const renderContent: Element | any =
       isLoaded && isSuccess ? display(data, theme) : <div />
-    return final
+    return renderContent
   }
 }
