@@ -53,5 +53,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "rc-trigger": "^4.0.2"
+  }
 }
