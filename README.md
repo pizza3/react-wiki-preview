@@ -39,13 +39,13 @@ const App = () => {
 Note: We also need to include these css classes as well.
 
 ```css
-.dropdown {
+.trigger {
   position: absolute;
   opacity: 1;
   transition: 0.1s;
   
 }
-.dropdown-hidden {
+.trigger-hidden {
   opacity: 0;
   visibility: hidden;
 }

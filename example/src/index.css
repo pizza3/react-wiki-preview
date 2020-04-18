@@ -10,12 +10,12 @@ body{
 }
 
 
-.dropdown {
+.trigger {
   position: absolute;
   opacity: 1;
   transition: 0.1s;
 }
-.dropdown-hidden {
+.trigger-hidden {
   opacity: 0;
   visibility: hidden;
 }

@@ -32,7 +32,7 @@ export default class Tooltip extends React.Component<Props> {
         action={['hover']}
         popup={<Content theme={theme} value={value} />}
         mouseEnterDelay={mouseEnterDelay}
-        prefixCls='dropdown'
+        prefixCls='trigger'
         popupAlign={position.bottom}
         // defaultPopupVisible
       >
