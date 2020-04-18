@@ -46,7 +46,7 @@ const arrow = (theme: Theme) => {
           data-name='Polygon 1'
           d='M20.436,3.651a4,4,0,0,1,6.128,0L41.485,21.429A4,4,0,0,1,38.421,28H8.579a4,4,0,0,1-3.064-6.571Z'
           fill={color}
-          transform='translate(0 0)'
+          transform='translate(9 0)'
         />
       </g>
     </svg>
