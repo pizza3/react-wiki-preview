@@ -56,7 +56,7 @@ Note: We also need to include these css classes as well.
 ### Component
 
 ### `<Wrapper/>`
-The `Wrapper` component 
+The `Wrapper` component encloses the text content, the type of the children can only be `string`.
 
 ### Props
 
@@ -65,7 +65,7 @@ The `Wrapper` component
 Type: `[ string , { word: string, title: string}]`
 
 Provide a array of string's for which a preview would be needed, If a word doesn't exist as a wiki article or the title of the article itself is different for
-those cases you can mention it like this `{ word: "your word"; title: "wiki article title" }` instead of provind a `string`.
+those cases you can mention it like this `{ word: "your word"; title: "wiki article title" }` instead of providing a `string`.
 
 Example
 ```js
@@ -96,18 +96,27 @@ delay time to show when mouse enter. unit: s.
 
 ## Development
 
-### Run build
-For building the final lib.
+Local development is broken into two parts (ideally using two tabs).
+
+First, run rollup to watch your `src/` module and automatically recompile it into `dist/` whenever you make changes.
+
 ```bash
-npm run build
+npm start # runs rollup with watch flag
 ```
 
-### Run dev
-For running the example and testing lib.
+The second part will be running the `example/` create-react-app that's linked to the local version of your module.
+
 ```bash
-npm run dev
+# (in another tab)
+cd example
+npm start # runs create-react-app dev server
 ```
 
+Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
+
+```bash
+npm run test:watch # runs tests in watch mode
+```
 ## License
 
 MIT License
