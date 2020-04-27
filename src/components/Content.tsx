@@ -30,7 +30,7 @@ const arrow = (theme: Theme) => {
     marginLeft: 'auto',
     marginRight: 'auto',
     left: '0px',
-    right: '0px'
+    right: '0px',
   }
   return (
     <svg
@@ -59,7 +59,7 @@ const wikiLogo = (theme: Theme) => {
     float: 'right' as 'right',
     right: '5px',
     top: '2px',
-    width: '19px'
+    width: '19px',
   }
   const color = theme === 'light' ? '#000' : '#a8a8a8'
   return (
@@ -91,7 +91,7 @@ const footer = (theme: Theme) => {
     zIndex: 1,
     height: '24px',
     backgroundImage: color,
-    position: 'absolute' as 'absolute'
+    position: 'absolute' as 'absolute',
   }
 }
 
@@ -107,7 +107,7 @@ const textStyles = (w: number, h: number, theme: Theme) => ({
   fontWeight: 400,
   zIndex: 1,
   letterSpacing: '0px',
-  background: theme === 'light' ? '#fff' : '#000'
+  background: theme === 'light' ? '#fff' : '#000',
 })
 
 const display = (data: Data, theme: Theme) => {
@@ -132,7 +132,7 @@ const display = (data: Data, theme: Theme) => {
         display: 'flex',
         flexDirection: flexDir === 'column' ? 'column' : 'row',
         color,
-        borderRadius: '2px'
+        borderRadius: '2px',
       }}
     >
       {imageExist ? (
@@ -145,7 +145,7 @@ const display = (data: Data, theme: Theme) => {
             backgroundSize: 'cover',
             backgroundColor: '#fff',
             zIndex: 1,
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
           }}
         />
       ) : (
@@ -163,11 +163,11 @@ export default class Content extends React.Component<Props, States> {
     data: {
       extract: '',
       thumbnail: { source: '', width: 0, height: 0 },
-      originalimage: { source: '' }
+      originalimage: { source: '' },
     },
     isLoaded: false,
     isSuccess: false,
-    isImageLoaded: false
+    isImageLoaded: false,
   }
 
   componentDidMount() {
@@ -188,12 +188,12 @@ export default class Content extends React.Component<Props, States> {
 
   updateData = (response: Response) => {
     const This = this
-    response.json().then(function(data) {
+    response.json().then(function (data) {
       const isSuccess = data.type === 'standard'
       This.setState({
         data,
         isLoaded: true,
-        isSuccess
+        isSuccess,
       })
     })
   }
