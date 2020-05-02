@@ -48,7 +48,7 @@ exports[`Wrapper Component Creates basic snapshot 1`] = `
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -92,137 +92,6 @@ exports[`Wrapper Component Creates basic snapshot 1`] = `
         >
           Greek
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="Ancient Greek"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      ὡρολόγιον,
@@ -248,7 +117,7 @@ for
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -292,137 +161,6 @@ for
         >
           constellation
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="constellation"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      of
@@ -447,7 +185,7 @@ the
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -491,137 +229,6 @@ the
         >
           celestial
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="Astronomical object"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      hemisphere.
@@ -661,7 +268,7 @@ clock
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -705,137 +312,6 @@ clock
         >
           pendulum
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="pendulum"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      and
@@ -859,7 +335,7 @@ clock
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -903,137 +379,6 @@ clock
         >
           constellation
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="constellation"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      was
@@ -1109,7 +454,7 @@ only
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -1153,137 +498,6 @@ only
         >
           star
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="star"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      that
@@ -1342,7 +556,7 @@ stars
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -1386,137 +600,6 @@ stars
         >
           star
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="star"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      systems
@@ -1536,7 +619,7 @@ the
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -1580,137 +663,6 @@ the
         >
           constellation
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="constellation"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      are
@@ -1735,7 +687,7 @@ an
         }
         afterPopupVisibleChange={[Function]}
         blurDelay={0.15}
-        defaultPopupVisible={true}
+        defaultPopupVisible={false}
         destroyPopupOnHide={false}
         focusDelay={0}
         getDocument={[Function]}
@@ -1779,137 +731,6 @@ an
         >
           exoplanet
         </a>
-        <Portal
-          didUpdate={[Function]}
-          getContainer={[Function]}
-          key="portal"
-        >
-          <Portal
-            containerInfo={
-              <div
-                style="position: absolute; top: 0px; left: 0px; width: 100%;"
-              >
-                <div>
-                  <div
-                    class="trigger"
-                    style="opacity: 0;"
-                  >
-                    <div />
-                  </div>
-                </div>
-              </div>
-            }
-          >
-            <Popup
-              align={
-                Object {
-                  "offset": Array [
-                    0,
-                    10,
-                  ],
-                  "points": Array [
-                    "tc",
-                    "bc",
-                  ],
-                }
-              }
-              className=""
-              destroyPopupOnHide={false}
-              getClassNameFromAlign={[Function]}
-              getRootDomNode={[Function]}
-              mask={false}
-              onAlign={[Function]}
-              onMouseDown={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              onTouchStart={[Function]}
-              prefixCls="trigger"
-              style={Object {}}
-              visible={true}
-            >
-              <div>
-                <ForwardRef
-                  motionAppear={false}
-                  motionEnter={false}
-                  motionLeave={false}
-                  onEnterEnd={[Function]}
-                  onLeaveEnd={[Function]}
-                  removeOnLeave={false}
-                  visible={true}
-                >
-                  <CSSMotion
-                    internalRef={null}
-                    motionAppear={false}
-                    motionEnter={false}
-                    motionLeave={false}
-                    onEnterEnd={[Function]}
-                    onLeaveEnd={[Function]}
-                    removeOnLeave={false}
-                    visible={true}
-                  >
-                    <Align
-                      align={
-                        Object {
-                          "offset": Array [
-                            0,
-                            10,
-                          ],
-                          "points": Array [
-                            "tc",
-                            "bc",
-                          ],
-                        }
-                      }
-                      disabled={true}
-                      key="popup"
-                      monitorWindowResize={true}
-                      onAlign={[Function]}
-                      target={[Function]}
-                    >
-                      <PopupInner
-                        className="trigger"
-                        hiddenClassName="trigger-hidden"
-                        onMouseDown={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onTouchStart={[Function]}
-                        prefixCls="trigger"
-                        style={
-                          Object {
-                            "opacity": 0,
-                            "zIndex": undefined,
-                          }
-                        }
-                        visible={true}
-                      >
-                        <div
-                          className="trigger"
-                          onMouseDown={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onTouchStart={[Function]}
-                          style={
-                            Object {
-                              "opacity": 0,
-                              "zIndex": undefined,
-                            }
-                          }
-                        >
-                          <Content
-                            theme="light"
-                            value="exoplanet"
-                          >
-                            <div />
-                          </Content>
-                        </div>
-                      </PopupInner>
-                    </Align>
-                  </CSSMotion>
-                </ForwardRef>
-              </div>
-            </Popup>
-          </Portal>
-        </Portal>
       </Trigger>
     </Tooltip>
      in
