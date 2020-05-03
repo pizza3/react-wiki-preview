@@ -94,7 +94,7 @@ Example
 
 ### `mouseEnterDelay`
 type: `float`
-delay time to show when mouse enter. unit: s.
+delay time to show when mouse enter. unit: seconds, default value is .5s.
 
 
 ## Development

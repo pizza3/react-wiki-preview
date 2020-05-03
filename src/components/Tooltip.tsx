@@ -26,7 +26,7 @@ type Props = {
 
 export default class Tooltip extends React.Component<Props> {
   render() {
-    const { children, value, theme, mouseEnterDelay } = this.props
+    const { children, value, theme, mouseEnterDelay = 0.5 } = this.props
     return (
       <Trigger
         action={['hover']}
